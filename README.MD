@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Java-based Student Club Management System includes various entity classes with specified data types to manage club-related data. It allows you to manage students, courses, teachers, assignments, exams, library books, attendance records, projects, employees, events, and inventory items.
+This Java-based Tarmeez Club Management System includes various entity classes with specified data types to manage University data. It allows you to manage students, courses, teachers, assignments, exams, library books, attendance records, projects, employees, events, and inventory items.
 
 ## Entity Classes
 
@@ -31,7 +31,7 @@ This Java-based Student Club Management System includes various entity classes w
 
 ## Manager Classes
 
-Each manager class provides methods for adding, updating, deleting, and listing records of the respective entity type.
+Each manager class provides methods for `adding()`, `updating()`, `deleting()`, and `listing()` records of the respective entity type.
 
 ## Tester Class
 
@@ -44,10 +44,4 @@ The `Tester` class demonstrates the usage of entity and manager classes with sam
 3. Customize the entity classes, manager classes, and tester class with your specific data and functionality.
 4. Run the `Tester` class to test your project's functionality.
 
-## Contributors
-
-- Saud (GitHub: @saud123)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Good Luck.!
