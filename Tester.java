@@ -5,9 +5,8 @@ public class Tester {
         Student student1 = new Student("S1", "John", "Doe", "1995-01-15", "john@example.com");
         Student student2 = new Student("S2", "Alice", "Smith", "1998-05-20", "alice@example.com");
 
-        // Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith",
-        // 3);
-        // Course course2 = new Course("C2", "Database Management", "Prof. Johnson", 4);
+        Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith", 3);
+        Course course2 = new Course("C2", "Database Management", "Prof. Johnson", 4);
 
         // Teacher teacher1 = new Teacher("T1", "Professor A", "profA@example.com");
         // Teacher teacher2 = new Teacher("T2", "Professor B", "profB@example.com");
@@ -29,8 +28,8 @@ public class Tester {
         // AttendanceRecord attendance2 = new AttendanceRecord("AR2", "Student2",
         // "2023-09-01", "Absent");
 
-        // Project project1 = new Project("P1", "Project A", "Description A");
-        // Project project2 = new Project("P2", "Project B", "Description B");
+        Project project1 = new Project("P1", "Project A", "Description A");
+        Project project2 = new Project("P2", "Project B", "Description B");
 
         // Employee employee1 = new Employee("E1", "John", "Doe", "HR");
         // Employee employee2 = new Employee("E2", "Alice", "Smith", "IT");
@@ -43,13 +42,13 @@ public class Tester {
 
         // --------- Create instances of manager classes ---------
         StudentManager studentManager = new StudentManager();
-        // CourseManager courseManager = new CourseManager();
+        CourseManager courseManager = new CourseManager();
         // TeacherManager teacherManager = new TeacherManager();
         // AssignmentManager assignmentManager = new AssignmentManager();
         // ExamManager examManager = new ExamManager();
         // LibraryManager libraryManager = new LibraryManager();
         // AttendanceManager attendanceManager = new AttendanceManager();
-        // ProjectManager projectManager = new ProjectManager();
+        ProjectManager projectManager = new ProjectManager();
         // EmployeeManager employeeManager = new EmployeeManager();
         // EventManager eventManager = new EventManager();
         // InventoryManager inventoryManager = new InventoryManager();
@@ -58,8 +57,8 @@ public class Tester {
         studentManager.add(student1);
         studentManager.add(student2);
 
-        // courseManager.add(course1);
-        // courseManager.add(course2);
+        courseManager.add(course1);
+        courseManager.add(course2);
 
         // teacherManager.add(teacher1);
         // teacherManager.add(teacher2);
@@ -76,8 +75,8 @@ public class Tester {
         // attendanceManager.add(attendance1);
         // attendanceManager.add(attendance2);
 
-        // projectManager.add(project1);
-        // projectManager.add(project2);
+        projectManager.add(project1);
+        projectManager.add(project2);
 
         // employeeManager.add(employee1);
         // employeeManager.add(employee2);
@@ -89,11 +88,11 @@ public class Tester {
         // inventoryManager.add(item2);
 
         // --------- List entities using manager classes ---------
-        System.out.println("List of Students:");
+        System.out.println("\nList of Students:");
         studentManager.list().forEach(System.out::println);
 
-        // System.out.println("\nList of Courses:");
-        // courseManager.list().forEach(System.out::println);
+        System.out.println("\nList of Courses:");
+        courseManager.list().forEach(System.out::println);
 
         // System.out.println("\nList of Teachers:");
         // teacherManager.list().forEach(System.out::println);
@@ -107,11 +106,11 @@ public class Tester {
         // System.out.println("\nList of Library Books:");
         // libraryManager.list().forEach(System.out::println);
 
-        // System.out.println("List of Attendance Records:");
+        // System.out.println("\nList of Attendance Records:");
         // attendanceManager.list().forEach(System.out::println);
 
-        // System.out.println("\nList of Projects:");
-        // projectManager.list().forEach(System.out::println);
+        System.out.println("\nList of Projects:");
+        projectManager.list().forEach(System.out::println);
 
         // System.out.println("\nList of Employees:");
         // employeeManager.list().forEach(System.out::println);
