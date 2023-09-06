@@ -5,8 +5,8 @@ public class Tester {
         Student student1 = new Student("S1", "John", "Doe", "1995-01-15", "john@example.com");
         Student student2 = new Student("S2", "Alice", "Smith", "1998-05-20", "alice@example.com");
 
-        // Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith", 3);
-        // Course course2 = new Course("C2", "Database Management", "Prof. Johnson", 4);
+        Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith", 3);
+        Course course2 = new Course("C2", "Database Management", "Prof. Johnson", 4);
 
         // Teacher teacher1 = new Teacher("T1", "Professor A", "profA@example.com");
         // Teacher teacher2 = new Teacher("T2", "Professor B", "profB@example.com");
@@ -39,7 +39,7 @@ public class Tester {
 
         // --------- Create instances of manager classes ---------
         StudentManager studentManager = new StudentManager();
-        // CourseManager courseManager = new CourseManager();
+        CourseManager courseManager = new CourseManager();
         // TeacherManager teacherManager = new TeacherManager();
         // AssignmentManager assignmentManager = new AssignmentManager();
         // ExamManager examManager = new ExamManager();
@@ -59,8 +59,8 @@ public class Tester {
         studentManager.add(student1);
         studentManager.add(student2);
 
-        // courseManager.add(course1);
-        // courseManager.add(course2);
+        courseManager.add(course1);
+        courseManager.add(course2);
 
         // teacherManager.add(teacher1);
         // teacherManager.add(teacher2);
@@ -94,11 +94,11 @@ public class Tester {
 
 
         // --------- List entities using manager classes ---------
-        System.out.println("List of Students:");
+        System.out.println("\nList of Students:");
         studentManager.list().forEach(System.out::println);
 
-        // System.out.println("\nList of Courses:");
-        // courseManager.list().forEach(System.out::println);
+        System.out.println("\nList of Courses:");
+        courseManager.list().forEach(System.out::println);
 
         // System.out.println("\nList of Teachers:");
         // teacherManager.list().forEach(System.out::println);
@@ -112,7 +112,7 @@ public class Tester {
         // System.out.println("\nList of Library Books:");
         // libraryManager.list().forEach(System.out::println);
         
-        // System.out.println("List of Attendance Records:");
+        // System.out.println("\nList of Attendance Records:");
         // attendanceManager.list().forEach(System.out::println);
 
         // System.out.println("\nList of Projects:");
