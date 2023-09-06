@@ -86,3 +86,5 @@ class Course {
                "Name: " + name + "\n";
     }
 }
+
+// this is for testing
