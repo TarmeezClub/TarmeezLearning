@@ -5,23 +5,29 @@ public class Tester {
         Student student1 = new Student("S1", "John", "Doe", "1995-01-15", "john@example.com");
         Student student2 = new Student("S2", "Alice", "Smith", "1998-05-20", "alice@example.com");
 
-        // Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith", 3);
+        // Course course1 = new Course("C1", "Introduction to Programming", "Dr. Smith",
+        // 3);
         // Course course2 = new Course("C2", "Database Management", "Prof. Johnson", 4);
 
         // Teacher teacher1 = new Teacher("T1", "Professor A", "profA@example.com");
         // Teacher teacher2 = new Teacher("T2", "Professor B", "profB@example.com");
 
         // Assignment assignment1 = new Assignment("A1", "Java Homework", "2023-09-15");
-        // Assignment assignment2 = new Assignment("A2", "Database Project", "2023-10-10");
+        // Assignment assignment2 = new Assignment("A2", "Database Project",
+        // "2023-10-10");
 
         // Exam exam1 = new Exam("E1", "Midterm Exam", "2023-09-25");
         // Exam exam2 = new Exam("E2", "Final Exam", "2023-12-15");
 
-        // LibraryBook book1 = new LibraryBook("B1", "Introduction to Java", "John Smith");
-        // LibraryBook book2 = new LibraryBook("B2", "Database Design", "Alice Johnson");
+        // LibraryBook book1 = new LibraryBook("B1", "Introduction to Java", "John
+        // Smith");
+        // LibraryBook book2 = new LibraryBook("B2", "Database Design", "Alice
+        // Johnson");
 
-        // AttendanceRecord attendance1 = new AttendanceRecord("AR1", "Student1", "2023-09-01", "Present");
-        // AttendanceRecord attendance2 = new AttendanceRecord("AR2", "Student2", "2023-09-01", "Absent");
+        // AttendanceRecord attendance1 = new AttendanceRecord("AR1", "Student1",
+        // "2023-09-01", "Present");
+        // AttendanceRecord attendance2 = new AttendanceRecord("AR2", "Student2",
+        // "2023-09-01", "Absent");
 
         // Project project1 = new Project("P1", "Project A", "Description A");
         // Project project2 = new Project("P2", "Project B", "Description B");
@@ -35,8 +41,6 @@ public class Tester {
         // InventoryItem item1 = new InventoryItem("I1", "Laptop", 5);
         // InventoryItem item2 = new InventoryItem("I2", "Projector", 3);
 
-
-
         // --------- Create instances of manager classes ---------
         StudentManager studentManager = new StudentManager();
         // CourseManager courseManager = new CourseManager();
@@ -49,11 +53,6 @@ public class Tester {
         // EmployeeManager employeeManager = new EmployeeManager();
         // EventManager eventManager = new EventManager();
         // InventoryManager inventoryManager = new InventoryManager();
-
-
-
-
-
 
         // --------- Add entities using manager classes ---------
         studentManager.add(student1);
@@ -89,10 +88,6 @@ public class Tester {
         // inventoryManager.add(item1);
         // inventoryManager.add(item2);
 
-
-
-
-
         // --------- List entities using manager classes ---------
         System.out.println("List of Students:");
         studentManager.list().forEach(System.out::println);
@@ -111,7 +106,7 @@ public class Tester {
 
         // System.out.println("\nList of Library Books:");
         // libraryManager.list().forEach(System.out::println);
-        
+
         // System.out.println("List of Attendance Records:");
         // attendanceManager.list().forEach(System.out::println);
 
@@ -128,5 +123,3 @@ public class Tester {
         // inventoryManager.list().forEach(System.out::println);
     }
 }
-
-
