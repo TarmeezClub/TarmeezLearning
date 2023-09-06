@@ -1,0 +1,56 @@
+public class Teacher {
+    private String teacherID;
+    private String firstName;
+    private String lastName;
+    private String email;
+
+    // Constructors
+    public Teacher(String teacherID, String firstName, String lastName, String email) {
+        this.teacherID = teacherID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    // Getters and setters
+    public String getTeacherID() {
+        return teacherID;
+    }
+
+    public void setTeacherID(String teacherID) {
+        this.teacherID = teacherID;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // toString method for displaying teacher information
+    @Override
+    public String toString() {
+        return "Teacher ID: " + teacherID + "\n" +
+               "First Name: " + firstName + "\n" +
+               "Last Name: " + lastName + "\n" +
+               "Email: " + email;
+    }
+}
