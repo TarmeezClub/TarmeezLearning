@@ -89,57 +89,6 @@ import java.util.List;
 }
 
 
-public class Main {
-    public static void main(String[] args) {
-        EmployeeManager employeeManager = new EmployeeManager();
-
-        Employee employee1 = new Employee("E001", "John", "Smith", "Sales");
-        employeeManager.add(employee1);
-
-        Employee employee2 = new Employee("E002", "Jane", "Doe", "Marketing");
-        employeeManager.add(employee2);
-
-        List<Employee> employeeList = employeeManager.list();
-        for (Employee employee : employeeList) {
-            System.out.println(employee.toString());
-        }
-
-        Employee employeeToDelete = employeeList.get(0);
-        employeeManager.delete(employeeToDelete);
-    }
-}
 
 
-
-
- interface Manageable<T> {
-    /**
-     * Adds an object to the management system.
-     *
-     * @param item The object to add.
-     */
-    void add(T item);
-
-    /**
-     * Updates an existing object in the management system.
-     *
-     * @param item The object to update.
-     */
-    void update(T item);
-
-    /**
-     * Deletes an object from the management system.
-     *
-     * @param item The object to delete.
-     */
-    void delete(T item);
-
-    /**
-     * Lists all objects in the management system.
-     *
-     * @return An array or collection of objects.
-     */
-    List<T> list();
-
-}
 

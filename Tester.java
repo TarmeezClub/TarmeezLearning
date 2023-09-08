@@ -31,8 +31,8 @@ public class Tester {
         Project project1 = new Project("P1", "Project A", "Description A");
         Project project2 = new Project("P2", "Project B", "Description B");
 
-        // Employee employee1 = new Employee("E1", "John", "Doe", "HR");
-        // Employee employee2 = new Employee("E2", "Alice", "Smith", "IT");
+        Employee employee1 = new Employee("E1", "John", "Doe", "HR");
+        Employee employee2 = new Employee("E2", "Alice", "Smith", "IT");
 
         // Event event1 = new Event("E1", "Conference", "2023-09-15");
         // Event event2 = new Event("E2", "Workshop", "2023-10-10");
@@ -48,8 +48,8 @@ public class Tester {
         // ExamManager examManager = new ExamManager();
         // LibraryManager libraryManager = new LibraryManager();
         // AttendanceManager attendanceManager = new AttendanceManager();
-       // ProjectManager projectManager = new ProjectManager();
-        // EmployeeManager employeeManager = new EmployeeManager();
+       ProjectManager projectManager = new ProjectManager();
+        EmployeeManager employeeManager = new EmployeeManager();
         // EventManager eventManager = new EventManager();
         // InventoryManager inventoryManager = new InventoryManager();
 
@@ -78,8 +78,8 @@ public class Tester {
         projectManager.add(project1);
         projectManager.add(project2);
 
-        // employeeManager.add(employee1);
-         //employeeManager.add(employee2);
+        employeeManager.add(employee1);
+        employeeManager.add(employee2);
 
         // eventManager.add(event1);
         // eventManager.add(event2);
@@ -112,8 +112,8 @@ public class Tester {
         System.out.println("\nList of Projects:");
         projectManager.list().forEach(System.out::println);
 
-         //System.out.println("\nList of Employees:");
-         //employeeManager.list().forEach(System.out::println);
+        System.out.println("\nList of Employees:");
+        employeeManager.list().forEach(System.out::println);
 
         // System.out.println("\nList of Events:");
         // eventManager.list().forEach(System.out::println);
