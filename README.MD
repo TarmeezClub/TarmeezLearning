@@ -28,7 +28,46 @@ This Java-based Tarmeez Club Management System includes various entity classes w
    `String eventID`, `String name`, `String date`
 11. **InventoryItem Class**: 
    `String itemID`, `String name`, `int quantity`
+12. **CourseRegistration Class**:
+   - `String registrationID`, `String studentID`, `String courseID`, `String registrationDate`
+13. **AssignmentSubmission Class**:
+   - `String submissionID`, `String assignmentID`, `String studentID`, `String submissionDate`
+14. **ExamResult Class**:
+   - `String resultID`, `String examID`, `String studentID`, `int score`
+15. **LibraryMember Class**:
+   - `String memberID`, `String studentID`, `String issueDate`, `String returnDate`
+16. **AttendanceStatistics Class**:
+   - `String statisticsID`, `String courseID`, `String date`, `int presentCount`, `int absentCount`
+17. **ProjectTeam Class**:
+   - `String teamID`, `String projectID`, `String studentIDs[]`
+18. **EmployeeSalary Class**:
+   - `String salaryID`, `String employeeID`, `double amount`, `String paymentDate`
+19. **EventParticipant Class**:
+   - `String participantID`, `String eventID`, `String participantName`, `String registrationDate`
+20. **InventoryCategory Class**:
+   - `String categoryID`, `String categoryName`
+21. **InventoryItemLocation Class**:
+   - `String locationID`, `String itemID`, `String locationName`, `int quantity`
+22. **StudentClubMembership Class**:
+   - `String membershipID`, `String studentID`, `String clubName`, `String joinDate`
+23. **CourseSchedule Class**:
+   - `String scheduleID`, `String courseID`, `String dayOfWeek`, `String time`
+24. **TeacherAssignment Class**:
+   - `String teacherAssignmentID`, `String teacherID`, `String assignmentID`, `String assignedDate`
+25. **EmployeeLeave Class**:
+   - `String leaveID`, `String employeeID`, `String startDate`, `String endDate`, `String leaveType`
+26. **EventAttendance Class**:
+   - `String eventAttendanceID`, `String eventID`, `String participantID`, `String attendanceDate`
+27. **LibraryTransaction Class**:
+   - `String transactionID`, `String studentID`, `String ISBN`, `String transactionDate`, `String transactionType`
+28. **ProjectTask Class**:
+   - `String taskID`, `String projectID`, `String taskName`, `String description`, `String deadline`
+29. **CourseMaterial Class**:
+   - `String materialID`, `String courseID`, `String materialName`, `String uploadDate`
+30. **EmployeeTraining Class**:
+   - `String trainingID`, `String employeeID`, `String trainingName`, `String trainingDate`
 
+These are the inline instance variables for each of the additional entity classes. You can use these as a reference to implement the entity classes in your project.
 ## Manager Classes
 
 Each manager class provides methods for `adding()`, `updating()`, `deleting()`, and `listing()` records of the respective entity type.
